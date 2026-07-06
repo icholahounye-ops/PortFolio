@@ -13,11 +13,14 @@
     });
   });
 
-document.getElementById('form-contact').addEventListener('submit', function (e) {
+const formContact = document.getElementById('form-contact');
+if (formContact) {
+  formContact.addEventListener('submit', function (e) {
     e.preventDefault();
     window.location.href = 'thankyou.html';
   });
-  
+}
+
   document.querySelectorAll('.photo img').forEach(function (img) {
       img.addEventListener('click', function () {
         window.open(img.src, '_blank');
