@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Accueil IFolio </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <h1>IFolio</h1>
+        <nav>
+       <ul>
+    <li> <a href="index.html" class="active"> Accueil </a></li>
+    <li> <a href="about.html"> À propos </a></li>
+    <li> <a href="skills.html"> Compétences </a></li>
+    <li> <a href="projects.html"> Projets </a></li>
+    <li> <a href="contact.html"> Contact </a></li>
+        </ul>
+    </header>
+</nav> 
+<main>
+    <section class="hero">
+        <div class="hero-texte">
+            <h1>Concevoir le futur du web, une ligne à la fois.</h1>
+            <p>Architecte de solution alliant expertise technique et visio stratégique pour des projets à fort impact social et économique.</p>
+        <a href="about.html" class="btn">À propos</a>
+        </div>
+        <div class="hero-photo">
+            <img src="download.png" alt="">
+        </div>
+    </section>
+
+    <section class="competences">
+        <h2>Mes compétences</h2>
+        <div class="grille-competences">
+            <div class="comp-carte">
+                <h3>Développement web</h3>
+                <p>Architecture front-end, responsable design et intégration des systèmes complexes.</p>
+      </div>
+      <div class="comp-carte">
+        <h3>Nutrition communautaire</h3>
+        <p>Analyse des besoins nutritionnels et mise en place des programmes de santé publique.</p>
+      </div>
+      <div class="comp-carte">
+        <h3>Agribusiness</h3>
+        <p>Optimisation des chaînes de valeur agricole par le numérique.</p>
+      </div>
+      <div class="comp-carte">
+        <h3>Suivi-évaluation</h3>
+        <p>Monitoring d'indicateur de performance et analyses d'impact de projet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projets</h2>
+    <div class="grille1">
+      <div class="carte1">
+        <div class="photo"><img src="Horloge.png" alt=""></div>
+        <div class="contenu">
+          <h2>Horloge</h2>
+          <p>Outil qui offre un affichage précis de l'heure en temps réel, conçu avec une architecture minimaliste et une performance optimale.</p>
+        </div>
+      </div>
+      <div class="carte1">
+        <div class="photo"><img src="Calculateur.jpg" alt=""></div>
+        <div class="contenu">
+          <h2>Calculatrice de prêt</h2>
+          <p>Outil interactif de simulation de prêt, offrant une estimation rapide des mensualités avec un graphique de composition clair.</p>
+        </div>
+      </div>
+      <div class="carte1">
+        <div class="photo"><img src="Page simple.jpg" alt=""></div>
+        <div class="contenu">
+          <h2>Interfaces web</h2>
+          <p>Création de pages simples et personnalisées, respectant une hiérarchie visuelle stricte et une accessibilité exemplaire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-accueil">
+    <div class="contact-texte">
+      <h2>Contact</h2>
+      <p>Vous avez un projet en tête ou souhaitez simplement échanger ? Parlons-en.</p>
+    </div>
+    <form id="form-contact">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required
+      oninvalid="this.setCustomValidity('Merci d\'entrer une adresse email valide')"
+          oninput="this.setCustomValidity('')"
+      >
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn-envoyer">Envoyer</button>
+    </form>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+ <footer>
+    <p>© 2026 IFolio. Tous droits réservés.</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/nounagnon-léonce-ichola-moudjadidou-hounye-b09318249?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+      <a href="https://www.facebook.com/profile.php?id=61566398323591" target="_blank">Facebook</a>
+      <a href="https://youtube.com/@leoncehounye?si=nacIitiE8Eba5r5x" target="_blank">YouTube</a>
+    </div>
+  </footer>
+</html>

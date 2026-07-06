@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Contact IFolio </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <h1>IFolio</h1>
+        <nav>
+       <ul>
+    <li> <a href="index.html"> Accueil </a></li>
+    <li> <a href="about.html"> À propos </a></li>
+    <li> <a href="skills.html"> Compétences </a></li>
+    <li> <a href="projects.html"> Projets </a></li>
+    <li> <a href="contact.html" class="active"> Contact </a></li>
+        </ul>
+    </header>
+</nav>
+
+<main>
+    <h1 class="page title">Contact</h1>
+       <div class="contact-box">
+        <form id="form-contact">
+             <label for="nom">Nom</label>
+          <input type="text" id="nom" placeholder="Votre nom" required>
+
+             <label for="email">Email</label>
+          <input type="email" id="email" placeholder="votre@email.com" required
+          oninvalid="this.setCustomValidity('Merci d\'entrer une adresse email valide')"
+          oninput="this.setCustomValidity('')"
+                       >
+          
+       
+             <label for="message">Message</label>
+            <textarea id="message" placeholder="Comment puis-je vous aider?" required></textarea>
+            <button type="submit" class="btn-envoyer">Envoyer</button>
+        </form>
+       </div>
+
+       <div class="Infos">
+         <div class="map">
+            <img src="localisation.jpg" alt="map">
+         </div>
+           <div class="Coordonnées">
+            <h3> Coordonnées </h3> 
+               <p>
+            Adresse email :
+            <a 
+        href="mailto:moudjahounye@gmail.com">moudjahounye@gmail.com</a>
+           <br>
+           Numéro de téléphone : 
+           <a 
+        href="tel:+2290157792386">+2290157792386</a>
+              </p>
+           </div>
+        </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+  <footer>
+    <p>© 2026 IFolio. Tous droits réservés.</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/nounagnon-léonce-ichola-moudjadidou-hounye-b09318249?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+      <a href="https://www.facebook.com/profile.php?id=61566398323591" target="_blank">Facebook</a>
+      <a href="https://youtube.com/@leoncehounye?si=nacIitiE8Eba5r5x" target="_blank">YouTube</a>
+    </div>
+  </footer>
+</html>
