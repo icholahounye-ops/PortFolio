@@ -13,6 +13,7 @@
     });
   });
 
+
 const formContact = document.getElementById('form-contact');
 if (formContact) {
   formContact.addEventListener('submit', function (e) {
@@ -26,3 +27,21 @@ if (formContact) {
         window.open(img.src, '_blank');
       });
     });
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('header nav');
+
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    menuToggle.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  mainNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      menuToggle.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
